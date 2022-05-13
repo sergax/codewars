@@ -1,9 +1,8 @@
-package com.sergax.tasks.first_bad_version;
+package com.sergax.tasks.max_sub_array;
 
-import com.sergax.tasks.implement_strstr.Solution;
 import org.junit.jupiter.api.Test;
 
-import static com.sergax.tasks.first_bad_version.Max_SubArray.maxSubArray;
+import static com.sergax.tasks.max_sub_array.Max_SubArray.maxSubArray;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

@@ -1,4 +1,4 @@
-package com.sergax.tasks.first_bad_version;
+package com.sergax.tasks.max_sub_array;
 
 /**
  * by Aksenchenko Serhii on 13.05.2022
@@ -13,6 +13,7 @@ public class Max_SubArray {
             sum += nums[i];
             sum = Math.max(sum, nums[i]);
             maxSum = Math.max(sum, maxSum);
+
         }
         return maxSum;
     }

@@ -1,6 +1,5 @@
-package remove_element;
+package com.sergax.tasks.remove_element;
 
-import com.sergax.tasks.remove_element.SolvingRemoveElement;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
