@@ -2,7 +2,7 @@ package com.sergax.tasks.what_prented;
 
 public class WhatPrented5 {
     public  class A {
-        public static void itStatic() {
+        public void itStatic() {
             System.out.println("it A");
         }
         public void that() {
@@ -11,9 +11,9 @@ public class WhatPrented5 {
     }
 
     public  class B extends A {
-        public static void itStatic() {
-            System.out.println("it B");
-        }
+//        public void itStatic() {
+//            System.out.println("it B");
+//        }
 
         @Override
         public void that() {
@@ -22,17 +22,15 @@ public class WhatPrented5 {
     }
 
     public  class  Test {
-        public static void main(String[] args) {
-//            A a = new A();
-//            a.that();
-//
-//            A a1 = new B();
-//            a.that();
-//
-//            B b = new B();
-//            b.that();
+        public void main(String[] args) {
+            A a = new A();
+            a.that();
 
-            //we can't do this, non static methods in static
+            A a1 = new B();
+            a.that();
+
+            B b = new B();
+            b.that();
         }
     }
 }

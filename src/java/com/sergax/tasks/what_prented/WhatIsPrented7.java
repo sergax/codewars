@@ -15,8 +15,8 @@ public class WhatIsPrented7 {
         System.out.println("E");
     }
 
-    private static void badMethod() {
+    private static void badMethod() throws Exception {
         throw new Error();
     }
-    //print -> A, C, D, E +
+    //print -> A, C, D, E
 }

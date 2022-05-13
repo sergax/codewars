@@ -5,7 +5,7 @@ public class WhatIsPrented2 {
         int i = 5;
         int j = ++i;
         int k = i++;
-        System.out.println("i= "+i+",j= "+j+",k= "+k);
+        System.out.println("i= " + i + ",j= " + j + ",k= " + k);
         //print -> 7, 6, 6
     }
 }
