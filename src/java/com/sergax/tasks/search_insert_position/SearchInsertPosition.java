@@ -28,4 +28,3 @@ public class SearchInsertPosition {
         return leftSide;
     }
 }
-
