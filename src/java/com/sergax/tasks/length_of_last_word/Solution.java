@@ -7,7 +7,7 @@ package com.sergax.tasks.length_of_last_word;
 public class Solution {
     public int lengthOfLastWord(String s) {
         int index = 0;
-        String[] array = s.split("\\s+");
+        String[] array = s.split(" ");
         for (int i = 0; i < array.length; i++) {
             index = array[array.length - 1].length();
         }
