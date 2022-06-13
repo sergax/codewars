@@ -1,9 +1,5 @@
 package com.sergax.tasks.search_insert_position;
 
-import lombok.AllArgsConstructor;
-
-import java.util.*;
-
 /**
  * by Aksenchenko Serhii on 04.05.2022
  */
