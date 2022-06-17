@@ -16,7 +16,7 @@ package com.sergax.tasks.regex_validate_pin_code;
 public class Solution {
     public static boolean validatePin(String pin) {
         // Your code here...
-        return pin.length() == 6 && pin.matches("[0-9]+")||
-                pin.length() == 4 && pin.matches("[0-9]+");
+        return pin.length() == 6 && pin.matches("\\d+")||
+                pin.length() == 4 && pin.matches("\\d+");
     }
 }
