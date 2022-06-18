@@ -6,7 +6,6 @@ import java.util.Arrays;
  * @author : sergax
  * @date : 17.06.22
  */
-
 @Exercise("hello")
 public class AnnotationExercise {
     //todo : mark class with annotation
