@@ -19,4 +19,8 @@ public class Solution {
         return pin.length() == 6 && pin.matches("\\d+")||
                 pin.length() == 4 && pin.matches("\\d+");
     }
+
+    public static void main(String[] args) {
+        System.out.println(validatePin("a1234"));
+    }
 }

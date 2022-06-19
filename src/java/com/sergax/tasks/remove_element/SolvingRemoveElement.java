@@ -1,7 +1,9 @@
 package com.sergax.tasks.remove_element;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /***
  * Solving :
@@ -13,12 +15,17 @@ import java.util.Map;
 public class SolvingRemoveElement {
     private int count;
 
-    public int removeElement(int[] nums, int val) {
-        Map<Integer, Integer> newMap = new HashMap<>();
+    public Set removeElement(int[] nums, int val) {
+        Set<Integer> newMap = new HashSet<>();
         for (int num : nums) {
             if (num != val)
-                newMap.put(count++, num);
+                newMap.add(num);
         }
-        return count;
+        return newMap;
+    }
+
+    public static void main(String[] args) {
+        SolvingRemoveElement s = new SolvingRemoveElement();
+        System.out.println(s.removeElement(new int[]{1, 2, 3, 4, 1}, 1));
     }
 }
