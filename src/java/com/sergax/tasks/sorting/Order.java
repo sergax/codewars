@@ -22,7 +22,7 @@ public class Order {
 
     private static int[] reversed(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length ; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 int current = arr[i];
                 arr[i] = arr[j];
                 arr[j] = current;
