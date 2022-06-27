@@ -14,10 +14,10 @@ import java.util.stream.IntStream;
  * Note: If the number is a multiple of both 3 and 5, only count it once.
  */
 public class Solution {
+    //TODO: Code stuff here
     private static int sum = 0;
     public static int solution(int number) {
         if (number < 0) return 0;
-        //TODO: Code stuff here
         for (int i = 0; i < number; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
                 sum += i;
