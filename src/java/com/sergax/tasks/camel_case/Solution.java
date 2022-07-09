@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class Solution {
     static String toCamelCase(String str) {
         String[] words = str.split("[-_]");
-        return Arrays.stream(words, 1, words.length)
+        return Arrays.stream(words)
                 .map(s -> s.substring(0, 1).toUpperCase() + s.substring(1))
                 .reduce(words[0], String::concat);
     }
