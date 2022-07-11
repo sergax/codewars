@@ -27,7 +27,7 @@ public class JadenCase {
         // 1. split by words
         // 2. take 1st later and do uppercase
         // 3. plus tail from 2nd later
-        // 4. join bi space
+        // 4. join by space
         if (phrase == null || phrase.isEmpty()) return null;
 
         return Arrays.stream(phrase.split(" "))

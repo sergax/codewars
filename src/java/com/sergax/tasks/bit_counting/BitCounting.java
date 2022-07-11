@@ -21,6 +21,6 @@ public class BitCounting {
     }
 
     public static void main(String[] args) {
-        System.out.println(BitCounting.countBits(100));
+        System.out.println(BitCounting.countBits(100011));
     }
 }
