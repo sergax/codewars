@@ -2,6 +2,7 @@ package com.sergax.tasks.array_diff;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
@@ -20,12 +21,12 @@ import java.util.stream.Collectors;
 public class Solution {
     public static int[] arrayDiff(int[] a, int[] b) {
         List<Integer> list1 = Arrays.stream(a).boxed().collect(Collectors.toList());
-        List<Integer> list2 = Arrays.stream(b).boxed().collect(Collectors.toList());
+        List<Integer> list2 = Arrays.stream(b).boxed().toList();
         list1.removeAll(list2);
         return list1.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static void main(String... args) {
-        System.out.printf(Arrays.toString(Solution.arrayDiff(new int[]{1, 2, 2, 2, 3}, new int[]{2})));
+        System.out.println(Arrays.toString(Solution.arrayDiff(new int[]{1, 2, 2, 2, 3}, new int[]{2})));
     }
 }
