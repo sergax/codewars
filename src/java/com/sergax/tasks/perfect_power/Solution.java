@@ -1,5 +1,8 @@
 package com.sergax.tasks.perfect_power;
 
+import java.util.Arrays;
+import java.util.Map;
+
 /**
  * @author: sergax
  * @date: 27.07.22
@@ -21,8 +24,19 @@ package com.sergax.tasks.perfect_power;
 class Solution {
     public static int[] isPerfectPower(int n) {
         // ...
-        Math.sqrt(n);
+        //if (Math.abs(n))
+        // 9 = 3^2
+        int number = (int) Math.sqrt(n);
+//        int degree = Math.pow();
 
-        return new int[]{};
+        int[] array = new int[2];
+        array[0] = number;
+//        array[1] = degree;
+
+        return array;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(Solution.isPerfectPower(25)));
     }
 }
