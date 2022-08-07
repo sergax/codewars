@@ -18,6 +18,12 @@ package com.sergax.tasks.sum_of_digits;
 public class Solution {
     public static int digital_root(int n) {
         //TODO ...
+        // init sum and last figure
+        // while number > 0 or sum > 9
+        // find last element like n % 10
+        // sum += last
+        // n /= 10
+        // if n == 0 do -> n = sum and sum = 0
         int sum = 0;
         int last;
 
@@ -33,7 +39,22 @@ public class Solution {
         return sum;
     }
 
+    static int method(int i) {
+        int acum = 0;
+        int temp;
+        while (i > 0 || acum > 9) {
+            if (i == 0) {
+                i = acum;
+                acum = 0;
+            }
+            acum += i % 10;
+            i /= 10;
+        }
+        return acum;
+    }
+
     public static void main(String[] args) {
-        System.out.println(Solution.digital_root(493193));
+        System.out.println(Solution.digital_root(1234));
+        System.out.println(Solution.method(1234));
     }
 }

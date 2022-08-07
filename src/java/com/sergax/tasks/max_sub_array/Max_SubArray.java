@@ -13,8 +13,11 @@ public class Max_SubArray {
             sum += nums[i];
             sum = Math.max(sum, nums[i]);
             maxSum = Math.max(sum, maxSum);
-
         }
         return maxSum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Max_SubArray.maxSubArray(new int[]{1, 2, 3, 4, 5, 6, -7}));
     }
 }

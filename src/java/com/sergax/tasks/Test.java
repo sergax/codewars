@@ -27,13 +27,11 @@ public class Test {
     }
 
     public static void moreThenOne(Map<Integer, Integer> newMap) {
-        int count = 0;
-        for (int v : newMap.values()) {
-            if (v > 2) {
-                count++;
+        for (Map.Entry<Integer, Integer> m : newMap.entrySet()) {
+            if (m.getValue() > 2) {
+                System.out.println(m.getValue() + " " + m.getKey());
             }
         }
-        System.out.println(count);
     }
 
     public static void main(String[] args) {
