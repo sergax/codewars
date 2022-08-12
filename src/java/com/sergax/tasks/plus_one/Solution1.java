@@ -4,20 +4,24 @@ import java.util.Arrays;
 
 class Solution1 {
     public static int[] plusOne(int[] digits) {
-        for (int i = 0; i < digits.length; i++) {
-            digits[digits.length - 1] = digits[digits.length - 1] + 1;
-            System.out.println(digits[digits.length - 1]);
-            if (digits[digits.length - 1] < 10) {
-                return digits;
+        int n = digits.length;
+        int i = n - 1;
+        for (; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                break;
             } else {
-                digits[digits.length - 1] = 1;
-                int[] array = new int[]{};
+                digits[i] = 0;
             }
         }
-        return digits;
+        if (i >= 0) return digits;
+        int[] res = new int[n + 1];
+        res[0] = 1;
+        for (i = 1; i < n + 1; i++) res[i] = digits[i - 1];
+        return res;
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(plusOne(new int[]{1, 2, 3, 4, 111})));
+        System.out.println(Arrays.toString(plusOne(new int[]{9, 9, 9})));
     }
 }
