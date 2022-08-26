@@ -1,13 +1,13 @@
 package com.sergax.tasks.whichAreIn;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 /**
  * @author: sergax

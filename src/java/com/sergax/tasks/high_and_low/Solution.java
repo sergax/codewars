@@ -1,12 +1,13 @@
 package com.sergax.tasks.high_and_low;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * @author: sergax
