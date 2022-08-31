@@ -3,26 +3,36 @@ package com.sergax.tasks;
 
 import org.junit.Test;
 
+
 import static org.junit.Assert.assertEquals;
 
-/**
- * @author: sergax
- * @date: 02.08.22
- */
 public class Test3 {
-    public static long findNextSquare(long sq) {
-        var firstSqrt = Math.sqrt(sq); // 11
-        if (firstSqrt % 1 != 0)
-            return -1;
-        firstSqrt++;
-
-        return (long) Math.pow(firstSqrt, 2);
+    public static boolean findNextSquare(String str, String ending) {
+        return str.endsWith(ending);
     }
 
     @Test
     public void test() {
-        assertEquals(144, Test3.findNextSquare(121));
-        assertEquals(676, Test3.findNextSquare(625));
-        assertEquals(-1, Test3.findNextSquare(114));
+        check("samurai", "ai", true);
+        check("sumo", "omo", false);
+        check("ninja", "ja", true);
+        check("sensei", "i", true);
+        check("samurai", "ra", false);
+        check("abc", "abcd", false);
+        check("abc", "abc", true);
+        check("abcabc", "bc", true);
+        check("ails", "fails", false);
+        check("fails", "ails", true);
+        check("this", "fails", false);
+        check("this", "", true);
+        check(":-)", ":-(", false);
+        check("!@#$%^&*() :-)", ":-)", true);
+        check("abc\n", "abc", false);
+    }
+
+    private static void check(String str, String ending, boolean expected) {
+        boolean result = Test3.findNextSquare(str, ending);
+        assertEquals("Expected solution(\"" + str + "\", \"" + ending + "\") to return " + expected, expected, result);
     }
 }
+
