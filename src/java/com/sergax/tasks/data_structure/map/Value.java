@@ -1,7 +1,5 @@
 package com.sergax.tasks.data_structure.map;
 
-import java.util.Objects;
-
 /**
  * @author: sergax
  * @date: 01.08.22
