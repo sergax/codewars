@@ -2,15 +2,18 @@ package com.sergax.tasks.kyu6.pile_of_Cubes;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class ASum {
     public static long findNb(long m) {
         // your code
-
+        List list = new ArrayList<>();
+//        list.stream().map()
         return 0L;
     }
-
     @Test
     public void test1() {
         assertEquals(2022, ASum.findNb(4183059834009L));

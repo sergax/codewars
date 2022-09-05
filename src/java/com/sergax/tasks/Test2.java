@@ -1,17 +1,14 @@
 package com.sergax.tasks;
 
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Test2 {
 
     public static void main(String[] args) {
-        double[] numbers = new double[]{-2.398};
-        String localPrefix = new String("5").intern();
-        String s = "5";
-        if (localPrefix == s) System.out.println("+");
-        double sum = Arrays.stream(numbers).sum();
-        System.out.println(sum);
+        Collection<Integer> collection = new ArrayList<>(Arrays.asList(1, 5, 33, 8));
+        Collection<Integer> collect = collection.stream().sorted().collect(Collectors.toList());
+        System.out.println(collect);
     }
 
 }
