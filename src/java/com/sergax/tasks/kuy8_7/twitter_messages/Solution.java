@@ -16,8 +16,8 @@ public class Solution {
         return Arrays.stream(Arrays.toString(twits.stream().toArray()).split(" "))
                 .filter(w -> w.startsWith("#"))
                 .map(word -> word.substring(1))
-                .distinct()
                 .sorted(Comparator.comparing(String::toString).reversed())
+                .distinct()
                 .toList();
     }
 
@@ -25,7 +25,7 @@ public class Solution {
         List<String> twits = new ArrayList<>();
         twits.add("#Java and #Scala are thr langueges of congnitive. 18M sees. #Java");
         twits.add("#Java and  are thr langueges of congnitive. 18M sees.");
-        twits.add("#Java and #Scala are thr langueges of congnitive. 18M sees.");
+        twits.add("#Java and #Scala are thr #langueges of congnitive. 18M sees.");
 
         System.out.println(Solution.getHashTags(twits));
     }

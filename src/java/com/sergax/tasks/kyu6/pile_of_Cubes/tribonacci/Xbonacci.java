@@ -3,7 +3,6 @@ package com.sergax.tasks.kyu6.pile_of_Cubes.tribonacci;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.Locale;
 
 import static org.junit.Assert.assertArrayEquals;
 
