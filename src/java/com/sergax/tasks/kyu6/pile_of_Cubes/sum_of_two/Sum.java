@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.*;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
 /**
  * [1, 2, 5, 3] -> 6 -> [0,2]

@@ -8,7 +8,7 @@ import java.util.Map;
  * @author: sergax
  * @date: 21.07.22
  */
-public class Test extends Test2 {
+public class Test {
     public static Map<Integer, Integer> countOfNumber(List<Integer> array) {
 //        var count = 0;
         var map = new HashMap<Integer, Integer>();
